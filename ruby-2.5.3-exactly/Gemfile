@@ -1,0 +1,18 @@
+ruby "2.5.3"
+
+source "https://rubygems.org"
+
+gem "active_model_serializers"
+gem "audited"
+
+group :development, :test do
+  gem "faker"
+end
+
+group :test do
+  gem "webmock"
+end
+
+group :development do
+  gem "spring"
+end
