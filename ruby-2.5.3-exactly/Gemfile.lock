@@ -38,7 +38,7 @@ GEM
     builder (3.2.3)
     case_transform (0.2)
       activesupport
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.4)
@@ -48,18 +48,18 @@ GEM
     hashdiff (0.3.8)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
-    json (1.0.0)
+    json (1.5.5)
     jsonapi-renderer (0.2.0)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
-    nokogiri (1.10.1)
+    nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
     public_suffix (3.0.3)
     rack (2.0.6)
-    rack-cache (1.1)
+    rack-cache (1.9.0)
       rack (>= 0.4)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -68,12 +68,12 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    redis (2.2.2)
-    redis-rack-cache (1.1)
-      rack-cache (= 1.1)
-      redis-store (= 1.1.0)
-    redis-store (1.1.0)
-      redis (~> 2.2.0)
+    redis (4.1.0)
+    redis-rack-cache (2.0.2)
+      rack-cache (>= 1.6, < 2)
+      redis-store (>= 1.2, < 2)
+    redis-store (1.6.0)
+      redis (>= 2.2, < 5)
     safe_yaml (1.0.5)
     spring (2.0.2)
       activesupport (>= 4.2)
@@ -89,11 +89,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers
+  active_model_serializers (>= 0.10.9)
   audited
   faker
-  json (= 1.0.0)
-  redis-rack-cache (= 1.1)
+  json (= 1.5.5)
+  redis-rack-cache (= 2.0.2)
   spring
   webmock
 
@@ -101,4 +101,4 @@ RUBY VERSION
    ruby 2.5.3p105
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
