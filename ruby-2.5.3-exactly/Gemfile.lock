@@ -48,7 +48,7 @@ GEM
     hashdiff (0.3.8)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
-    json (1.0.0)
+    json (2.3.0)
     jsonapi-renderer (0.2.0)
     loofah (2.2.3)
       crass (~> 1.0.2)
@@ -92,7 +92,7 @@ DEPENDENCIES
   active_model_serializers
   audited
   faker
-  json (= 1.0.0)
+  json (= 2.3.0)
   redis-rack-cache (= 1.1)
   spring
   webmock
@@ -101,4 +101,4 @@ RUBY VERSION
    ruby 2.5.3p105
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
