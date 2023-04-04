@@ -2,10 +2,10 @@ ruby "2.5.3"
 
 source "https://rubygems.org"
 
-gem "active_model_serializers"
-gem "audited"
-gem "redis-rack-cache", "1.1"
-gem "json", "1.0.0"
+gem "active_model_serializers", ">= 0.10.12"
+gem "audited", ">= 4.10.0"
+gem "redis-rack-cache", "2.0.2"
+gem "json", "2.3.0"
 
 group :development, :test do
   gem "faker"
