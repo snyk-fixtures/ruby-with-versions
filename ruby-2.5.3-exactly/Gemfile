@@ -2,8 +2,8 @@ ruby "2.5.3"
 
 source "https://rubygems.org"
 
-gem "active_model_serializers"
-gem "audited"
+gem "active_model_serializers", ">= 0.10.12"
+gem "audited", ">= 4.10.0"
 gem "redis-rack-cache", "1.1"
 gem "json", "1.0.0"
 
@@ -16,5 +16,5 @@ group :test do
 end
 
 group :development do
-  gem "spring"
+  gem "spring", ">= 2.1.0"
 end
